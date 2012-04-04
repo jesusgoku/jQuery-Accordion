@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jquery.accordion-v0.1.min.js"></script>
+	<script type="text/javascript">
+	<!--
+		$(function(){
+			$('.accordion').accordion({
+				oneView: true, // Indica si de debe mostrar uno a la vez o multiples
+				applyStyle: true, // Si es verdadero se aplicaran estilos, de lo contrario se espera que aplique estilos por css
+				titleColor: '#000', // Color del titulo
+				titleBackground: '#A9D06A', // Fondo del titulo
+				titleBorderColor: '#CDE99F', // Borde titulo
+				bodyColor: '#000', // Color del texto del cuerpo
+				bodyBackground: '#FFF', // Fondo del cuerpo
+				borderRadius: '0' // Tamano del borde redondiado
+			});
+		});
+	//-->
+	</script>
+	<style type="text/css">
+	<!--
+		body { font-family:Tahoma; font-size:12px; background-color: #CCC; }
+
+		/* Accordion */
+		/*.accordion h3 { font-size:15px; margin-bottom:5px; margin-top:0; }
+		.accordion h3 a { text-decoration:none; color:#FFF; display:block; background-color:#C00; padding:5px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+		.accordion > div { color: #C00; background-color:#EAEAEA; padding:5px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; margin-bottom:5px; }*/
+	-->
+	</style>
+</head>
+<body>
+	<div class="accordion">
+		<h3><a href="#uno">Uno</a></h3>
+		<div id="uno">Contenido de uno</div>
+		<h3><a href="#">Dos</a></h3>
+		<div id="dos">Contenido de dos</div>
+		<h3><a href="#tres">Tres</a></h3>
+		<div id="tres">Contenido de tres</div>
+	</div><!-- /.accordion -->
+</body>
+</html>
